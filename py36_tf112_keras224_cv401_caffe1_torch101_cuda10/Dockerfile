@@ -107,7 +107,7 @@ RUN pip3 --no-cache-dir install \
         tensorboardX \
         keras && \
         pip3 install --upgrade python-dateutil
-RUN pip3 --no-cache-dir install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.12.0-cp36-cp36m-linux_x86_64.whl
+RUN pip3 --no-cache-dir install --ignore-installed --upgrade tensorflow-gpu==1.13.0rc1
 RUN pip3 install https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp36-cp36m-linux_x86_64.whl && \
     pip3 install torchvision
 WORKDIR /
